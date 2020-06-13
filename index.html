@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Delivery Food — доставка еды на дом</title>
+    <title>Delivery Food — food delivery service</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet"/>
     <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/style.css"/>
@@ -18,20 +18,20 @@
 				<img src="img/icon/logo.svg" alt="Logo"/>
 			</a>
 			<label class="address">
-				<input type="text" class="input input-address" placeholder="Адрес доставки"/>
+				<input type="text" class="input input-address" placeholder="Enter delivery adress"/>
 			</label>
 			<div class="buttons">
 				<span class="user-name"></span>
 				<button class="button button-primary button-auth">
 					<span class="button-auth-svg"></span>
-					<span class="button-text">Войти</span>
+					<span class="button-text">Log in</span>
 				</button>
 				<button class="button button-cart" id="cart-button">
 					<span class="button-cart-svg"></span>
-					<span class="button-text">Корзина</span>
+					<span class="button-text cart-text">Cart(0)</span>
 				</button>
 				<button class="button button-primary button-out">
-					<span class="button-text">Выйти</span>
+					<span class="button-text">Log Out</span>
 					<span class="button-out-svg"></span>
 				</button>
 			</div>
@@ -41,45 +41,42 @@
 
 	<main class="main">
 		<div class="container">
-<!-- swiper -->
-      <div class="container-promo swiper-container">
-			<div class="swiper-wrapper">
-				<section class="swiper-slide promo pizza">
-					<h1 class="promo-title">Онлайн-сервис <br/>доставки еды на дом</h1>
-					<p class="promo-text">
-						Блюда из любимого ресторана привезет курьер в перчатках, маске и с антисептиком
-					</p>
-				</section>
-				<section class="swiper-slide promo kebab">
-					<h1 class="promo-title">Шашлыки на майские <br> со скидкой 35%</h1>
-					<p class="promo-text">
-						Закажите шашлыки в любом ресторане до 10 мая и получите скидку по промокоду OMAGAD
-					</p>
-				</section>
-				<section class="swiper-slide promo vegetables">
-					<h1 class="promo-title">Скидка 20% на всю еду <br> по промокоду LOVE.JS</h1>
-					<p class="promo-text">
-						Блюдо из ресторана привезут вместе с двумя подарочными книгами по фронтенду
-					</p>
-				</section>
-				<section class="swiper-slide promo sushi">
-					<h1 class="promo-title">Сеты со скидкой до 30% <br> в ресторанах</h1>
-					<p class="promo-text">
-						Скидки на сеты до 30 мая по промокоду DADADA
-					</p>
-				</section>
+			<div class="container-promo swiper-container">
+				<div class = "swiper-wrapper">
+					<section class="swiper-slide promo pizza">
+						<h1 class="promo-title">Your favourite <br/> food, delivered at home</h1>
+						<p class="promo-text">
+							Dishes from your favorite restaurants brings a courier in gloves, a mask and an antiseptic.
+						</p>
+					</section>
+					<section class="swiper-slide promo kebab">
+						<h1 class="promo-title">Kebab <br> with a 35% discount</h1>
+						<p class="promo-text">
+							Order kebab in any restaurant until June 10 and get a discount on OMAGAD promo code
+						</p>
+					</section>
+					<section class="swiper-slide promo vegetables">
+						<h1 class="promo-title">20% off all meals <br> by promo code LOVE.FOOD</h1>
+						<p class="promo-text">
+							A dish from the restaurant will be brought along with a recipe book
+						</p>
+					</section>
+					<section class="swiper-slide promo sushi">
+						<h1 class="promo-title">30% discount <br> in restaurants</h1>
+						<p class="promo-text">
+							Discounts for sets until May 30 with DADADA promo code
+						</p>
+					</section>
+				</div>
 			</div>
-      </div>
-      <!-- swiper -->
 			<section class="restaurants">
 				<div class="section-heading">
-					<h2 class="section-title">Рестораны</h2>
+					<h2 class="section-title">Top Restaurants</h2>
 					<label class="search">
-						<input type="text" class="input input-search" placeholder="Поиск блюд и ресторанов"/>
+						<input type="text" class="input input-search" placeholder="Search meals and restaurants"/>
 					</label>
 				</div>
 				<div class="cards cards-restaurants">
-
 				</div>
 				<!-- /.cards -->
 			</section>
@@ -90,13 +87,14 @@
 						<div class="rating">
 							4.5
 						</div>
-						<div class="price">От 900 ₽</div>
+						<div class="price">От 900₽ </div>
 						<div class="category">Пицца</div>
 					</div>
 					<!-- /.card-info -->
 				</div>
 				<div class="cards cards-menu">
-        </div>
+				</div>
+				<!-- /.cards -->
 			</section>
 
 		</div>
@@ -108,10 +106,10 @@
 			<div class="footer-block">
 				<img src="img/icon/logo.svg" alt="logo" class="logo footer-logo"/>
 				<nav class="footer-nav">
-					<a href="#" class="footer-link">Ресторанам </a>
-					<a href="#" class="footer-link">Курьерам</a>
-					<a href="#" class="footer-link">Пресс-центр</a>
-					<a href="#" class="footer-link">Контакты</a>
+					<a href="#" class="footer-link">Partners</a>
+					<a href="#" class="footer-link">Delivery</a>
+					<a href="#" class="footer-link">FAQ</a>
+					<a href="#" class="footer-link">Contacts</a>
 				</nav>
 				<div class="social-links">
 					<a href="#" class="social-link"><img src="img/social/instagram.svg" alt="instagram"/></a>
@@ -127,7 +125,7 @@
 	<div class="modal modal-cart">
 		<div class="modal-dialog">
 			<div class="modal-header">
-				<h3 class="modal-title">Корзина</h3>
+				<h3 class="modal-title">Cart</h3>
 				<button class="close">&times;</button>
 			</div>
 			<!-- /.modal-header -->
@@ -175,10 +173,10 @@
 			</div>
 			<!-- /.modal-body -->
 			<div class="modal-footer">
-				<span class="modal-pricetag">1250 ₽</span>
+				<span class="modal-pricetag">0 ₽</span>
 				<div class="footer-buttons">
-					<button class="button button-primary">Оформить заказ</button>
-					<button class="button clear-cart">Отмена</button>
+					<button class="button button-primary">Place Order</button>
+					<button class="button clear-cart">Clear All</button>
 				</div>
 			</div>
 			<!-- /.modal-footer -->
@@ -191,20 +189,20 @@
 			<button class="close-auth">&times;</button>
 			<form id="logInForm">
 				<fieldset class="modal-body">
-					<legend class="modal-title">Авторизация</legend>
+					<legend class="modal-title">Authorization </legend>
 					<label class="label-auth">
-						<span>Логин</span>
+						<span>Name</span>
 						<input id="login" type="text">
 					</label>
 					<label class="label-auth">
-						<span>Пароль</span>
-						<input id="password" type="password">
+						<span>Password</span>
+						<input id="password" type="password" placeholder ="">
 					</label>
 				</fieldset>
 				<!-- /.modal-body -->
 				<div class="modal-footer">
 					<div class="footer-buttons">
-						<button class="button button-primary button-login" type="submit">Войти</button>
+						<button class="button button-primary button-login" type="submit">Log in</button>
 					</div>
 				</div>
 			</form>
@@ -212,7 +210,7 @@
 		</div>
 		<!-- /.modal-dialog -->
 	</div>
-	<script src="https://unpkg.com/swiper/js/swiper.min.js"></script><!-- swiper -->
+	<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 
